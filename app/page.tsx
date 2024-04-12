@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
+import RealHome from './Components/RealHome';
 
-function page() {
+export default function App() {
   return (
     <div>
-      <h1 className="Title">iPray</h1>
+      <RealHome />
     </div>
-  )
-}
-
-export default page
+  );
+};

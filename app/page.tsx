@@ -1,11 +1,10 @@
-import React from 'react'
-
-function page() {
+import React from 'react';
+import Route from "./Routes/Routes"
+ 
+export default function App() {
   return (
     <div>
-      <h1 className="Title">iPray</h1>
+      <Route />
     </div>
-  )
-}
-
-export default page
+  );
+};

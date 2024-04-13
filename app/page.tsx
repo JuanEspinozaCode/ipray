@@ -1,10 +1,10 @@
 import React from 'react';
-import RealHome from './Components/RealHome';
-
+import Route from "./Routes/Routes"
+ 
 export default function App() {
   return (
     <div>
-      <RealHome />
+      <Route />
     </div>
   );
 };

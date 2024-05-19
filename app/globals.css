@@ -1,10 +1,85 @@
-.Title{
+/* Concept 1 */
+/* .card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(224, 193, 155, 0.441);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
+  height: 500px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.card-body {
   display: flex;
   justify-content: center;
-  background-color: #8fd0ec;
-  max-width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  font-family:serif;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
+
+.card-un {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/05/08/Old-Vintage-Paper-Textured-background-Graphics-69135662-1-580x387.jpg');
+}
+
+.card-likes {
+  display: flex;
+  justify-content: flex-end;
+} */
+/* ------------------------------------ */
+
+/* Concept 2 */
+
+.card-body{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-un{
+  background-color:  #0b344f;
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.card-text {
+  display: flex;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #2f4758;
+  /* box-shadow: inset 0 0 10px #617582; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.326), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pray-header{
+  font-family: cursive;
+  /* text-decoration: underline; */
+  margin-right: 10px;
+  padding: 5px;
+  height: 50px;
+}
+
+
+
+

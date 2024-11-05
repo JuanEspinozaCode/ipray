@@ -101,6 +101,7 @@
 .column {
   float: left;
   width: 33.33%;
+  margin-top: 50px;
 }
 
 /* Clear floats after the columns */
@@ -195,6 +196,7 @@ a {
   background-color: var(--navbar-body-color);
   padding: var(--navbar-padding-y) var(--navbar-padding-x);
   border-bottom: 1px solid var(--border-color);
+  position: fixed;
 }
 
 @media (min-width: 576px) {

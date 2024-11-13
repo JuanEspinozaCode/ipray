@@ -126,7 +126,6 @@ li a:hover {
 .column {
   float: left;
   width: 33.33%;
-  margin-top: 50px;
 }
 
 /* Clear floats after the columns */

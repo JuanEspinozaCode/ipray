@@ -2,7 +2,7 @@ import React from 'react';
 import Links from "./Routes/Routes"
 import Card from './home/card';
 import Comments from './home/comments';
-import Home from './home/page';
+// import Home from './home/page';
 const mockData = [
   {
     id: 1,
@@ -34,7 +34,7 @@ export default function App() {
   return (
     <div>
       <Links />
-      <Home />
+      {/* <Home /> */}
 <div className="row">
   <div className="column">
     <h1>people who prayed</h1>

@@ -1,10 +1,10 @@
-import React from 'react';
+// import React from 'react';
 
-interface Props  {};
+// interface Props  {};
 
-const Home = (props: Props) => {
-  return  <div>Home</div>;
+// const Home = (props: Props) => {
+//   return  <div></div>;
   
-};
+// };
 
-export default Home;
+// export default Home;

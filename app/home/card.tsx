@@ -33,8 +33,8 @@ const Card: React.FC<Props> = ({ data }) => {
                   src={imgs[0]}
                   height={75}
                   style={{ marginLeft: "5px" }}
-                  alt=""/>
-                  <button>Like</button> 
+                  alt=""
+                /><button>Like</button> 
               </div>
             </div>
           </div>

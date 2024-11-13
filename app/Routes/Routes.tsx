@@ -1,9 +1,13 @@
 import Link from 'next/link';
 function Route() {
     return (
-        <ul className='nav-main'>
-        <li className='nav-list'><a className="active" href="#home">Home</a></li>
-        <li className='nav-list'><a href="/about">About</a></li>
+        <ul>
+            <li>
+                <Link href="/">home</Link>
+            </li>
+            <li>
+                <Link href="/about">About</Link>
+            </li>
         </ul>
     )
 }

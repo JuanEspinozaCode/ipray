@@ -131,14 +131,14 @@
 :root {
   --font-family: 'Roboto', sans-serif;
   --font-size-base: 0.925rem;
-  --base-color: #66f;
+  --base-color: #fff;
   --text-dark: #3c4250;
   --border-color: #eceef3;
-  --navbar-body-color: #fff;
+  --navbar-body-color: #9BD2D7;
   --navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --navbar-padding-y: 1rem;
   --navbar-padding-x: 1.15rem;
-  --navbar-link-hover: #66f;
+  --navbar-link-hover: #fff;
   --navbar-link-padding-y: 0.5rem;
   --navbar-link-padding-x: 1rem;
   --navbar-dropdown-padding-y: 0.5rem;

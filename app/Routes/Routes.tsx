@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -35,7 +36,7 @@ const Navbar: React.FC = () => {
           </button>
           <a href="/">
             <h4>
-              Awesome<span>logo</span>
+              <Image src="/ipray_logo.jpg" alt="Logo" height={40} width={40} style={{ borderRadius: '50%' }} />
             </h4>
           </a>
         </div>
@@ -45,14 +46,13 @@ const Navbar: React.FC = () => {
             <li className="active">
               <a href="/">Home</a>
             </li>
-
             <li className="navbar-dropdown">
               <a
                 href="/categories"
                 className="dropdown-toggler"
                 onClick={(e) => handleDropdownToggle(e, 'my-dropdown-id')}
               >
-                Categories <i className="fa fa-angle-down"></i>
+                Prayers <i className="fa fa-angle-down"></i>
               </a>
               <ul className={`dropdown ${openDropdown === 'my-dropdown-id' ? 'show' : ''}`} id="my-dropdown-id">
                 <li><a href="/">Actions</a></li>
@@ -63,15 +63,13 @@ const Navbar: React.FC = () => {
                 <li><a href="/">One more S2</a></li>
               </ul>
             </li>
-
-            {/* Dropdown menu for Blog */}
             <li className="navbar-dropdown">
               <a
                 href="/blog"
                 className="dropdown-toggler"
                 onClick={(e) => handleDropdownToggle(e, 'blog')}
               >
-                Blog <i className="fa fa-angle-down"></i>
+                Psalms <i className="fa fa-angle-down"></i>
               </a>
               <ul className={`dropdown ${openDropdown === 'blog' ? 'show' : ''}`} id="blog">
                 <li><a href="/">Some category</a></li>
@@ -82,11 +80,8 @@ const Navbar: React.FC = () => {
                 <li><a href="/">One more separated link.</a></li>
               </ul>
             </li>
-
-            <li><a href="/about">About</a></li>
-            <li><a href="/">Contact</a></li>
-            <li><a href="/">Signin</a></li>
-            <li><a href="/">Login</a></li>
+            <li><a href="/about">About the Kingdom</a></li>
+            <li><a href="/">About Us</a></li>
           </ul>
         </div>
       </div>

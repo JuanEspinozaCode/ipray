@@ -1,50 +1,7 @@
-/* Concept 1 */
-/* .card {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 20px;
-  background-color: rgba(224, 193, 155, 0.441);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 350px;
-  padding: 20px;
-  margin: 20px;
-  height: 500px;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-  font-family:'Times New Roman', Times, serif;
-}
-
 .card-body {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.card-un {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
   padding: 20px;
-  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/05/08/Old-Vintage-Paper-Textured-background-Graphics-69135662-1-580x387.jpg');
-}
-
-.card-likes {
-  display: flex;
-  justify-content: flex-end;
-} */
-/* ------------------------------------ */
-
-/* Concept 2 */
-
-/* card style */
-.card-body {
-  display: flex;
-  justify-content: center;
-
 }
 
 .card-un {
@@ -52,18 +9,30 @@
   padding: 20px;
   border-radius: 20px;
   width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card-un:hover {
+  transform: translateY(-5px);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-text {
   display: flex;
+  flex-direction: column;
   color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   background-color: #2f4758;
-  /* box-shadow: inset 0 0 10px #617582; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.326), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   align-items: center;
-  flex-direction: column;
+  margin-bottom: 15px; /* Added margin for spacing */
 }
 
 .text-container {
@@ -74,27 +43,27 @@
 }
 
 .pray-header {
-  font-family: cursive;
-  /* text-decoration: underline; */
-  margin-right: 10px;
+  font-family: "Cursive", sans-serif; /* Use a fallback font */
+  margin: 10px 0; /* Centered with margin */
   padding: 5px;
   height: 50px;
+  font-size: 1.5em; /* Increased font size for emphasis */
 }
-
-/* Button Style */
 
 .pray-btn {
   background-color: #515e64;
   color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 12px 20px; /* Improved padding for better touch targets */
   border: none;
+  font-size: 1em; /* Consistent font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition */
 }
 
 .pray-btn:hover {
   background-color: #2f4758;
-  color: white;
-  cursor: pointer;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 /* Comments */
@@ -104,17 +73,12 @@
   margin-top: 50px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .ppl-prayed {
   background-color: rgb(98, 101, 101);
   height: 300px;
   border-radius: 10px;
+  padding: 10px; /* Added padding for inner spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .ppl-prayed-name {
@@ -123,13 +87,14 @@
   border-radius: 10px;
   color: white;
   text-align: center;
+  margin: 5px 0; /* Added margin for spacing */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 /* Variáveis convertidas para CSS */
 :root {
-  --font-family: 'Roboto', sans-serif;
+  --font-family: "Roboto", sans-serif;
   --font-size-base: 0.925rem;
   --base-color: #fff;
   --text-dark: #3c4250;
@@ -185,10 +150,9 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 768px) {å
   .navbar,
-  .navbar>.container {
+  .navbar > .container {
     display: block;
   }
 }
@@ -302,7 +266,7 @@ a {
   .navbar-nav {
     width: 100%;
     display: block;
-    border-top: 1px solid #EEE;
+    border-top: 1px solid #eee;
     margin-top: 1rem;
   }
 }
@@ -358,7 +322,8 @@ a {
 
 .navbar-dropdown .dropdown li a {
   color: var(--text-dark);
-  padding: var(--navbar-dropdown-item-padding-y) var(--navbar-dropdown-item-padding-x);
+  padding: var(--navbar-dropdown-item-padding-y)
+    var(--navbar-dropdown-item-padding-x);
   display: block;
 }
 

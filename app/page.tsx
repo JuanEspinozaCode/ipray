@@ -37,17 +37,10 @@ export default function App() {
       <Home />
       <div className="row">
         <div className="column">
-          <h1>people who prayed</h1>
-          <div className="ppl-prayed">
-            <div className="ppl-prayed-name">@username</div>
-            <div></div>
-          </div>
-        </div>
-        <div className="column">
           <Card data={mockData} />
         </div>
         <div className="column">
-          <Comments />
+          <Comments />å
         </div>
       </div>
     </div>

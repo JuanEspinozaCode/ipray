@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React from "react";
 
@@ -17,7 +17,6 @@ let imgs = [
   "https://www.onlygfx.com/wp-content/uploads/2018/08/6-grunge-cross-1.png",
 ];
 const Card: React.FC<Props> = ({ data }) => {
-
   return (
     <div className="card-center">
       <div className="card-body">
@@ -34,7 +33,8 @@ const Card: React.FC<Props> = ({ data }) => {
                   height={75}
                   style={{ marginLeft: "5px" }}
                   alt=""
-                /><button>Like</button> 
+                />
+                <button>Like</button>
               </div>
             </div>
           </div>

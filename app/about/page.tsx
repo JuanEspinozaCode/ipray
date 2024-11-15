@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-interface Props  {};
+interface Props {}
 
 const About = (props: Props) => {
   return <div>About</div>;
-  
-};export default About;
+};
+export default About;

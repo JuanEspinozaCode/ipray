@@ -10,10 +10,8 @@ const Navigation: React.FC = () => {
         style={ NavContainer }
         >ipray</div>
         <div className="navbarlinks">
-
           <a href="/"
           style={LinksStyle}>Home</a>
-
           <a href="/about"
           style={LinksStyle}>About</a>
         </div>

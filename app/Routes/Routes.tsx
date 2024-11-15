@@ -48,40 +48,24 @@ const Navbar: React.FC = () => {
             </li>
             <li className="navbar-dropdown">
               <a
-                href="/categories"
+                href="/prayers"
                 className="dropdown-toggler"
                 onClick={(e) => handleDropdownToggle(e, 'my-dropdown-id')}
               >
                 Prayers <i className="fa fa-angle-down"></i>
               </a>
-              <ul className={`dropdown ${openDropdown === 'my-dropdown-id' ? 'show' : ''}`} id="my-dropdown-id">
-                <li><a href="/">Actions</a></li>
-                <li><a href="/">Something else</a></li>
-                <li className="separator"></li>
-                <li><a href="/">Separated link</a></li>
-                <li className="separator"></li>
-                <li><a href="/">One more S2</a></li>
-              </ul>
             </li>
             <li className="navbar-dropdown">
               <a
-                href="/blog"
+                href="/psalms"
                 className="dropdown-toggler"
                 onClick={(e) => handleDropdownToggle(e, 'blog')}
               >
                 Psalms <i className="fa fa-angle-down"></i>
               </a>
-              <ul className={`dropdown ${openDropdown === 'blog' ? 'show' : ''}`} id="blog">
-                <li><a href="/">Some category</a></li>
-                <li><a href="/">Another category</a></li>
-                <li className="separator"></li>
-                <li><a href="/">Separated link</a></li>
-                <li className="separator"></li>
-                <li><a href="/">One more separated link.</a></li>
-              </ul>
             </li>
-            <li><a href="/about">About the Kingdom</a></li>
-            <li><a href="/">About Us</a></li>
+            <li><a href="/kingdom">About the Kingdom</a></li>
+            <li><a href="/about">About Us</a></li>
           </ul>
         </div>
       </div>

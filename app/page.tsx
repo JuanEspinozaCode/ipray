@@ -1,8 +1,8 @@
-import React from 'react';
-import Links from "./Routes/Routes"
-import Card from './home/card';
-import Comments from './home/comments';
-import Home from './home/page';
+import React from "react";
+import Links from "./Routes/Routes";
+import Card from "./home/card";
+import Comments from "./home/comments";
+import Home from "./home/page";
 const mockData = [
   {
     id: 1,
@@ -26,7 +26,7 @@ const mockData = [
     likes: 0,
   },
 ];
- 
+
 export default function App() {
   /*
     Everything here without 'use client' is server side rendered
@@ -35,23 +35,21 @@ export default function App() {
     <div>
       <Links />
       <Home />
-<div className="row">
-  <div className="column">
-    <h1>people who prayed</h1>
-    <div className='ppl-prayed'>
-      <div className="ppl-prayed-name">
-      @username
+      <div className="row">
+        <div className="column">
+          <h1>people who prayed</h1>
+          <div className="ppl-prayed">
+            <div className="ppl-prayed-name">@username</div>
+            <div></div>
+          </div>
+        </div>
+        <div className="column">
+          <Card data={mockData} />
+        </div>
+        <div className="column">
+          <Comments />
+        </div>
       </div>
-      <div></div>
-    </div>
-  </div>
-  <div className="column">
-  <Card data = {mockData} />
-  </div>
-  <div className="column" >
-    <Comments />
-  </div>
-</div>
     </div>
   );
-};
+}

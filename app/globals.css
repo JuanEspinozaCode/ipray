@@ -84,9 +84,6 @@ button:disabled {
   width: 400px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  margin-top: 60px;
-  margin-left: 2px;
-  height: 600px;
 }
 
 .card-un:hover {
@@ -150,7 +147,7 @@ button:disabled {
 .column {
   float: left;
   width: 33.33%;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .ppl-prayed {

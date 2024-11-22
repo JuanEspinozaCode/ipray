@@ -17,6 +17,9 @@ const ContainerStyle: CSSProperties = {
 const PsalmContainer = {
   marginBottom: "1.2rem",
   maxWidth: "700px",
+  border: '1px solid lightgrey',
+  padding: '25px',
+  borderRadius: '8px',
 };
 
 const About = (props: Props) => {

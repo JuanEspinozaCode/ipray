@@ -11,7 +11,7 @@ const ContainerStyle: CSSProperties = {
   alignItems: "center",
   flexDirection: "column",
   height: "100%",
-  paddingTop: '150x',
+  paddingTop: '150px',
 };
 
 const PsalmContainer = {

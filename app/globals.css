@@ -176,10 +176,10 @@ button:disabled {
 :root {
   --font-family: "Roboto", sans-serif;
   --font-size-base: 0.925rem;
-  --base-color: #fff;
-  --text-dark: #3c4250;
+  --base-color: #A8776E;
+  --text-dark: #ffffff;
   --border-color: #eceef3;
-  --navbar-body-color: #9BD2D7;
+  --navbar-body-color: #2D2F39;
   --navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --navbar-padding-y: 1rem;
   --navbar-padding-x: 1.15rem;
@@ -241,7 +241,7 @@ a {
   box-shadow: var(--navbar-shadow);
   background-color: var(--navbar-body-color);
   padding: var(--navbar-padding-y) var(--navbar-padding-x);
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
   position: fixed;
 }
 

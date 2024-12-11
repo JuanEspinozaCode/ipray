@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
           <a href="/">
             <h4>
               <Image
-                src="/ipray_logo.jpg"
+                src="/ipray_logo.png"
                 alt="Logo"
                 height={40}
                 width={40}

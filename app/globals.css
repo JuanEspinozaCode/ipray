@@ -368,9 +368,9 @@ a {
   }
 }
 
-.navbar-nav>li.active>a {
+/* .navbar-nav>li.active>a {
   color: var(--base-color);
-}
+} */
 
 .navbar-dropdown .dropdown {
   list-style: none;

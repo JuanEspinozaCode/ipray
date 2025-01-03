@@ -6,19 +6,19 @@ export default function Api() {
   const [verse, setVerse] = useState<string>("");
 
   useEffect(() => {
-    fetch("https://bible-api.com/genesis%2011:1")
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then(data => {
-        setVerse(data.text);
-      })
-      .catch(error => console.error("Error fetching the verse:", error));
+    const fetchData = async () => {
+      // How can we randomize this?
+      const response = await fetch("https://bible-api.com/genesis%2011:1");
+      const data = await response.json();
+      // Promise -> server -> response -> data (JSON) -> setVerse
+      setVerse(data.text);
+    }
+
+    const handleError = (e: any) => console.log("Error fetching the verse:", e);
+    fetchData().catch(handleError);
   }, []);
 
+  console.log('plop verse', { verse })
   return (
     <div>
       <div className="daily-verse">

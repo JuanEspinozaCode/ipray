@@ -18,7 +18,6 @@ export default function Api() {
     fetchData().catch(handleError);
   }, []);
 
-  console.log('plop verse', { verse })
   return (
     <div>
       <div className="daily-verse">

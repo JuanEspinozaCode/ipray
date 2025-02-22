@@ -56,7 +56,7 @@ const Card: React.FC<Props> = ({ data }) => {
                   <p className="username"> {item.username}</p>
                   <p className="text-container">{item.prayer}</p>
                   <br />
-                  
+
                   <div className="buttons">
                     <button className="handleButton" onClick={handlePrev}>
                       ←

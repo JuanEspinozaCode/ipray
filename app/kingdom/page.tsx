@@ -1,6 +1,7 @@
 import React from "react";
+import TwoColumnsLayout from "./content";
 
-interface Props {};
+interface Props {}
 
 const ContainerStyle = {
   display: "flex",
@@ -10,6 +11,6 @@ const ContainerStyle = {
 };
 
 const Kingdom = (props: Props) => {
-  return <div style={ContainerStyle}>About the Kingdom</div>;
+  return <TwoColumnsLayout />;
 };
 export default Kingdom;

@@ -2,6 +2,8 @@ import React from "react";
 
 const imgs = ["pngegg.png"];
 
+const background = ["kingdom.png"];
+
 const TwoColumnsLayout = () => {
   return (
     <div
@@ -26,10 +28,12 @@ const TwoColumnsLayout = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              height: "100%",
+              height: "107%",
             }}>
-            <h1>Column 1</h1>
-            <p>Images?</p>
+            <img
+              src={background[0]}
+              height={400}
+              alt=""></img>
           </div>
         </div>
         <div

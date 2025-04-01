@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 const imgs = ["pngegg.png"];
-
 const background = ["kingdom.png"];
+const titles = ["The Kingdom", "Purpose"];
+const texts = [
+  "Luke 17:20-21 – ”The kingdom of God does not come with observation; nor will they say, ‘See here!’ or ‘See there!’ For indeed, the kingdom of God is within you.”                       Colossians 1:13 – ”He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son.” Revelation 11:15 – ”The kingdoms of this world have become the kingdom of our Lord and of His Christ, and He shall reign forever and ever!”",
+  "Living with Purpose and Meaning",
+];
 
 const TwoColumnsLayout = () => {
+  const [index, setIndex] = useState(0);
+
+  const nextSlide = () =>
+    setIndex((prev: number) => (prev + 1) % titles.length);
+
+  const prevSlide = () =>
+    setIndex((prev: number) => (prev - 1 + titles.length) % titles.length);
+
   return (
     <div
       style={{
@@ -19,8 +31,8 @@ const TwoColumnsLayout = () => {
         <div
           style={{
             flex: 1,
-            padding: "20px",
             background: "linear-gradient(to bottom, #EEC9BB, #F4B9A6)",
+            height: "100%",
           }}>
           <div
             style={{
@@ -28,14 +40,12 @@ const TwoColumnsLayout = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              height: "107%",
+              height: "100%",
             }}>
-            <img
-              src={background[0]}
-              height={400}
-              alt=""></img>
+            <img src={background[0]} height={400} />
           </div>
         </div>
+
         <div
           style={{
             flex: 1,
@@ -48,56 +58,21 @@ const TwoColumnsLayout = () => {
             justifyContent: "center",
             fontSize: "24px",
             fontWeight: "bold",
+            flexDirection: "column",
+            textAlign: "center",
           }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-            }}>
-            <img
-              src={imgs[0]}
-              height={50}
-              style={{ position: "relative" }}
-              alt=""
-            />
-            <h1
-              style={{
-                fontSize: "32px",
-                fontWeight: "bold",
-                paddingTop: "50px",
-              }}>
-              The Kingdom
-            </h1>
-            <h2 style={{ fontSize: "19px", paddingTop: "45px" }}>
-              Requiremants of the kingdom
-            </h2>
-            <h4
-              style={{
-                paddingLeft: "200px",
-                paddingRight: "200px",
-                fontSize: "16px",
-                textAlign: "center",
-                lineHeight: "1.2",
-              }}>
-              Faith in Him as Lord and Savior (John 3:3 - "unless one is born
-              again, he cannot see the kingdom of God"). Repentance from sin and
-              submission to God’s rule (Matthew 4:17). Humility and childlike
-              faith (Matthew 18:3). Jesus commissioned His followers to spread
-              the good news of the Kingdom throughout the world (Matthew
-              28:18-20). This mission is carried out through evangelism, acts of
-              service, and embodying Kingdom values in daily life.The ultimate
-              fulfillment of the Kingdom will come when Christ returns to
-              establish His eternal reign, bringing justice, peace, and the
-              complete restoration of creation (Revelation 11:15 - “The kingdom
-              of the world has become the kingdom of our Lord and of His Christ,
-              and He will reign forever and ever”). In essence, the Kingdom of
-              God is both a present reality and a future hope, calling believers
-              to live under God's reign while anticipating its full realization
-              in eternity.
-            </h4>
+          <img
+            src={imgs[0]}
+            height={50}
+            className="relative"
+            style={{ marginBottom: "20px" }}
+          />
+          <h1>{titles[index]}</h1>
+          <br />
+            <h4 style={{ fontSize: 17, marginInline:230 }}>{texts[index]}</h4>
+          <div>
+            <button onClick={prevSlide}>&larr; Previous</button>
+            <button onClick={nextSlide}>Next &rarr;</button>
           </div>
         </div>
       </div>

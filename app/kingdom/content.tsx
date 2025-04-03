@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const imgs = ["pngegg.png"];
-const background = ["kingdom.png"];
+const imgs = "pngegg.png";
+const background = "kingdom.png";
 const titles = ["The Kingdom", "Purpose"];
 const texts = [
   "Luke 17:20-21 – ”The kingdom of God does not come with observation; nor will they say, ‘See here!’ or ‘See there!’ For indeed, the kingdom of God is within you.”                       Colossians 1:13 – ”He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son.” Revelation 11:15 – ”The kingdoms of this world have become the kingdom of our Lord and of His Christ, and He shall reign forever and ever!”",
@@ -42,7 +42,7 @@ const TwoColumnsLayout = () => {
               alignItems: "center",
               height: "100%",
             }}>
-            <img src={background[0]} height={400} />
+            <img src={background} height={400} />
           </div>
         </div>
 
@@ -62,14 +62,14 @@ const TwoColumnsLayout = () => {
             textAlign: "center",
           }}>
           <img
-            src={imgs[0]}
+            src={imgs}
             height={50}
             className="relative"
             style={{ marginBottom: "20px" }}
           />
           <h1>{titles[index]}</h1>
           <br />
-            <h4 style={{ fontSize: 17, marginInline:230 }}>{texts[index]}</h4>
+          <h4 style={{ fontSize: 17, marginInline: 230 }}>{texts[index]}</h4>
           <div>
             <button onClick={prevSlide}>&larr; Previous</button>
             <button onClick={nextSlide}>Next &rarr;</button>
